@@ -18,7 +18,11 @@ body {
     opacity: 0.83;
     display: table;
     width: 100%;
-    padding-top: 300px;
+    height: 800px;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    left: 0;
     background: linear-gradient(#9ACD32 0%, #FF8C00 100%);
 }
 
@@ -60,6 +64,11 @@ h2 {
     padding: 50px;
     text-align: center;
     font-size: 50px;
+    background-color: blueviolet;
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 500px;
 }
 
 p {
@@ -67,4 +76,85 @@ p {
     margin: 25px auto;
     font-size: 20px;
     line-height: 1.3;
+}
+
+.menu {
+    list-style: none;
+    font-family: 'Yellowtail', cursive;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    width: 100%;
+    z-index: 10;
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.links {
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.links:hover {
+    background-color: darkblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+#apps {
+    background-color: royalblue;
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+#games {
+    background-color: palegreen;
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+#chatbot {
+    background-color: royalblue;
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+#game1,
+#game2 {
+    width: 200px;
+    height: 400px;
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: transform .2s;
+}
+
+#game1:hover {
+    transform: scale(0.9);
+}
+
+#game2:hover {
+    transform: scale(0.9);
+}
+
+#contact {
+    background-color: fuchsia;
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
 }
